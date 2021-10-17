@@ -25,7 +25,7 @@ if option == 'Home':
 	st.write(
 			"""
 				## Project Description
-				This is a NER tool developed by Koushik.Pls check out the navigition tab in left corner for the NER application
+				This is a NER tool developed by Koushik.Pls check out the navigition tab in left corner for the NER application and type the key word and press ctrl+enter. Pls ignore the warning and use the app.
 			"""
 		)
 elif option == "Named Entity Recognition":
