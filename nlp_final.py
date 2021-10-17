@@ -1,10 +1,8 @@
 
 import spacy
-import en_core_web_sm 
 import spacy_streamlit
 import streamlit as st
 import wikipedia
-import wikipediaapi
 ner=spacy.load("en_core_web_sm")
 
 
