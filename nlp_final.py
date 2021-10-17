@@ -5,6 +5,7 @@ import spacy_streamlit
 import streamlit as st
 import wikipedia
 import wikipediaapi
+ner=spacy.load("en_core_web_sm")
 
 
 def scrapping(input1):
@@ -36,7 +37,7 @@ elif option == "Named Entity Recognition":
 	input1=st.text_area("enter keyword")
 	content = scrapping(input1)
 
-	ner = en_core_web_sm.load()
+	#ner = en_core_web_sm.load()
 	doc = ner(str(content))
 
 	# Display 
