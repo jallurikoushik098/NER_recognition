@@ -35,7 +35,7 @@ elif option == "Named Entity Recognition":
 	input1=st.text_area("enter keyword")
 	
 	content = scrapping(input1)
-
+	#applying spacy model for NER recognition
 	doc = ner(str(content))
 
 	# Display 
