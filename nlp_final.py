@@ -31,7 +31,7 @@ if option == 'Home':
 elif option == "Named Entity Recognition":
 
 	st.header("Enter the keyword for wikiidea that you want to analyze")
-	st.markdown("**Random Sentence:** Tesla car")
+	st.markdown("**Random idea:** Tesla car")
 	input1=st.text_area("enter keyword")
 	
 	content = scrapping(input1)
