@@ -1,11 +1,11 @@
-
+#importing all modules
 import spacy
 import spacy_streamlit
 import streamlit as st
 import wikipedia
 ner=spacy.load("en_core_web_sm")
 
-
+# Scrapping the data using Wikipedia API
 def scrapping(input1):
   result = wikipedia.search(input1)
   print(result)
@@ -15,7 +15,7 @@ def scrapping(input1):
   return content
 
 
-
+#Designing the APP
 st.title('NER Recognizer\n', )
 st.subheader("JALLURI PAVAN NAGA VENKATA KOUSHIK")
 
@@ -25,7 +25,7 @@ if option == 'Home':
 	st.write(
 			"""
 				## Project Description
-				This is a NER tool developed by Koushik.
+				This is a NER tool developed by Koushik.Pls check out the navigition tab in left corner for the NER application
 			"""
 		)
 elif option == "Named Entity Recognition":
@@ -33,9 +33,9 @@ elif option == "Named Entity Recognition":
 	st.header("Enter the keyword for wikiidea that you want to analyze")
 	st.markdown("**Random Sentence:** Tesla car")
 	input1=st.text_area("enter keyword")
+	
 	content = scrapping(input1)
 
-	#ner = en_core_web_sm.load()
 	doc = ner(str(content))
 
 	# Display 
