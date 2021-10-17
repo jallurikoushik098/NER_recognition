@@ -1,5 +1,6 @@
 # NER_recognition
 this project scrappes and recognizes the text in WIKI and does NER on it.
+
 App link: https://share.streamlit.io/jallurikoushik098/ner_recognition/main/nlp_final.py
 
 This is the work flow of the APP:
