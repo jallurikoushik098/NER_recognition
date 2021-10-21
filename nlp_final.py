@@ -9,6 +9,7 @@ ner=spacy.load("en_core_web_sm")
 def scrapping(input1):
   result = wikipedia.search(input1)
   print(result)
+  page = wikipedia.page(result[0])
   content = page.content
   print(content)
   return content
