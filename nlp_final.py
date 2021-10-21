@@ -32,7 +32,8 @@ elif option == "Named Entity Recognition":
 
 	st.header("Enter the keyword for wikiidea that you want to analyze")
 	st.markdown("**Random idea:** Tesla car")
-	input1=st.text_area("enter keyword")
+	#input1=st.text_area("enter keyword")
+	input1=st.text_input("enter keyword")
 	
 	content = scrapping(input1)
 	#applying spacy model for NER recognition
