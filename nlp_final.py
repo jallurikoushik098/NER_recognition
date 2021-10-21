@@ -41,5 +41,4 @@ elif option == "Named Entity Recognition":
 
 	# Display 
 	spacy_streamlit.visualize_ner(doc, labels=ner.get_pipe('ner').labels)
-	st.bar_chart(doc, labels=ner.get_pipe('ner').labels)
 
