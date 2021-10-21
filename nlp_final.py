@@ -8,10 +8,10 @@ ner=spacy.load("en_core_web_sm")
 # Scrapping the data using Wikipedia API
 def scrapping(input1):
   result = wikipedia.search(input1)
-  print(result)
+  #print(result)
   page = wikipedia.page(result[1])
   content = page.content
-  print(content)
+  #print(content)
   return content
 
 
