@@ -12,12 +12,23 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Scrapping the data using Wikipedia API
 def scrapping(input1):
-  result = wikipedia.search(input1,results=5)
+	try:
+		result = wikipedia.search(input1,results=5)
+                #print(result)
+                page = wikipedia.page(result[1])
+                content = page.content
+                #print(content)
+                return content
+	except:
+		pass
+		
+  '''result = wikipedia.search(input1,results=5)
   #print(result)
   page = wikipedia.page(result[1])
   content = page.content
   #print(content)
-  return content
+  return content'''
+
 
 
 #Designing the APP
