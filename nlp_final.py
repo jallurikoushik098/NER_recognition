@@ -3,7 +3,12 @@ import spacy
 import spacy_streamlit
 import streamlit as st
 import wikipedia
+import warnings
 ner=spacy.load("en_core_web_sm")
+
+warnings.filterwarnings(action='ignore')
+st.set_option('deprecation.showfileUploaderEncoding', False)
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Scrapping the data using Wikipedia API
 def scrapping(input1):
