@@ -14,11 +14,10 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 def scrapping(input1):
 	try:
 		result = wikipedia.search(input1,results=5)
-                #print(result)
-                page = wikipedia.page(result[1])
-                content = page.content
-                #print(content)
-                return content
+		page =wikipedia.page(result[1])
+		content = page.content
+		return content
+                
 	except:
 		pass
 		
