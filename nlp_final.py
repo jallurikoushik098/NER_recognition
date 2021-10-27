@@ -21,14 +21,7 @@ def scrapping(input1):
 	except:
 		pass
 		
-  '''result = wikipedia.search(input1,results=5)
-  #print(result)
-  page = wikipedia.page(result[1])
-  content = page.content
-  #print(content)
-  return content'''
-
-
+  
 
 #Designing the APP
 st.title('NER Recognizer\n', )
