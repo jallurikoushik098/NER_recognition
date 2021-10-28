@@ -14,7 +14,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 def scrapping(input1):
 	try:
 		result = wikipedia.search(input1,results=5)
-		page =wikipedia.page(result[1])
+		page =wikipedia.page(result[0])
 		content = page.content
 		return content
                 
